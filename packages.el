@@ -11,7 +11,7 @@
 
 ;;; Code:
 
-(defconst crystal-packages
+(setq crystal-packages
   '(
     (crystal-mode :location (recipe :fetcher github :repo "dotmilk/emacs-crystal-mode"))
     popwin
