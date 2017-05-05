@@ -43,7 +43,10 @@
     :post-config
     (push '("*crystal formatter*" :tail t :noselect t) popwin:special-display-config)))
 
-(defun crystal/init-crystal-mode ())
+(defun crystal/init-crystal-mode ()
+  (use-package crystal-mode
+    :defer t
+    :mode ("\\.cr\\'" . crystal-mode)))
 
 (defun crystal/post-init-crystal-mode ()
   (add-hook 'after-save-hook #'crystal--format-file))
