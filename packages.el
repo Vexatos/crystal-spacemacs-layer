@@ -14,6 +14,7 @@
 (setq crystal-packages
   '(
     (crystal-mode :location (recipe :fetcher github :repo "dotmilk/emacs-crystal-mode"))
+    flycheck
     popwin
     company
     )
@@ -53,5 +54,10 @@
 
 (defun crystal/post-init-company ()
   (spacemacs|add-company-backends :modes crystal-mode))
+
+
+(defun crystal/post-init-flycheck ()
+  (require 'flycheck-crystal)
+  (spacemacs/enable-flycheck 'crystal-mode))
 
 ;;; packages.el ends here
