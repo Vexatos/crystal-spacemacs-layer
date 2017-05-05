@@ -49,6 +49,6 @@
   (add-hook 'after-save-hook #'crystal--format-file))
 
 (defun crystal/post-init-company ()
-  (spacemacs|add-company-hook crystal-mode))
+  (spacemacs|add-company-backends :modes crystal-mode))
 
 ;;; packages.el ends here
