@@ -12,7 +12,7 @@
 
 * Description
 This layer aims to provide support for the Crystal language with the following features:
-  - syntax highlighting and indentation (provided by [[https://github.com/ggiraldez/emacs-crystal-mode/][an external package]]).
+  - syntax highlighting and indentation (provided by [[https://github.com/crystal-lang-tools/emacs-crystal-mode/][an external package]]).
   - automatic file formatting
   - autocompletion snippets
 
@@ -20,7 +20,7 @@ This layer aims to provide support for the Crystal language with the following f
 To use this layer first clone it into your =~/.emacs.d/private= directory:
 
 #+BEGIN_SRC shell
-git clone git@github.com:juanedi/crystal-spacemacs-layer.git ~/.emacs.d/private/crystal
+git clone https://github.com/Vexatos/crystal-spacemacs-layer.git ~/.emacs.d/private/crystal
 #+END_SRC
 
 Then enable the layer in your =~/.spacemacs=:

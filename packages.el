@@ -13,7 +13,7 @@
 
 (setq crystal-packages
   '(
-    (crystal-mode :location (recipe :fetcher github :repo "dotmilk/emacs-crystal-mode"))
+    (crystal-mode :location (recipe :fetcher github :repo "crystal-lang-tools/emacs-crystal-mode"))
     flycheck
     popwin
     company
